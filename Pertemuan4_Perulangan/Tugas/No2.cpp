@@ -19,7 +19,7 @@ int main()
     cout << "Masukkan sebuah huruf yang ingin dihilangkan: ";
     cin >> h;
     
-    for (char c : kalimat)
+    for (auto c : kalimat)
     {
         if (c == tolower(h) || c == toupper(h))
         {
