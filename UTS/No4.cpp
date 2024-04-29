@@ -10,32 +10,29 @@ int main()
     cout << "Masukkan nilai tinggi : ";
     cin >> tinggi;
 
-    int n=1;
-    
-    for (int i = tinggi; i > 0; i--)
+    for (int i = 0; i < tinggi; i++)
     {
-        if ( n >= tinggi/2)
+        if ( i <= tinggi/2)
         {
-            for (int j = i/2; j > 0; j--)
+            for (int j = i; j < tinggi/2; j++)
             {
                 cout << " ";
             }
-            cout << endl;
 
-            for (int k = 1; k < i/2; k++)
+            for (int k = 0; k <= i; k++)
             {
                 cout << "* ";
             }
         }
 
-        if ( n < tinggi/2)
+        if ( i > tinggi/2)
         {
-            for ( int l = 1; l < i/2; i++)
+            for (int j = 0; j < i - tinggi/2; j++)
             {
                 cout << " ";
             }
 
-            for ( int m = i/2; m > 0; m--)
+            for (int k = 0; k < tinggi-i; k++)
             {
                 cout << "* ";
             }
