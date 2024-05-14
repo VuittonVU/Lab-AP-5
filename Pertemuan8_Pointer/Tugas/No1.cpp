@@ -20,6 +20,8 @@ int main()
             cout << bil[i] << endl;
             ptrbil = &bil[i];
             cout << "Alamat memori: "<< ptrbil << endl;
+                //jika tidak mau menggunakan pointer:
+                //cout << "Alamat memori: "<< &bil[i] << endl;
                     cout << endl;
         }
     }
